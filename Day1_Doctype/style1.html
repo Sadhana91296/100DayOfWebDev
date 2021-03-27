@@ -1,0 +1,32 @@
+<!Doctype HTML>
+<html>
+    <head>
+         <style>  
+		   body{
+		    background-color:gray;
+			}
+		 </style>
+		 
+		 
+		 <!-- link tag used to insert external file-->
+		 <link rel="stylesheet" href="mystyle.css"/>
+		 
+		 
+		 <!--script tag is used to define client side javascript -->
+		 <script>
+		     function myfun(){
+			   document.getElementById("demo").innerHTML="Welcome in the world of Javascript.";
+			 }
+		 </script>
+		 
+		 <!--Base tag is used specified the base URL and/or target for all relative URL in a page -->
+		  <base url="www.tcs.com" target="_blank>
+		  
+		<!-- noscript tag is used to display an alternative message when script tag is not executed. -->
+        <noscript>Sorry your browser is not supporting the javascript. </noscript>		
+    </head>
+    <body >
+	    <p id="demo">This is a paragraph. </p>
+        <button type="button" onclick="myfun()" >Click me to call the function</button> 		
+	</body>
+</html>
