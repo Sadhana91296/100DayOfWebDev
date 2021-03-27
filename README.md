@@ -1,1 +1,1 @@
-# 100DayOfWebDev
+# 100 Day in web development
