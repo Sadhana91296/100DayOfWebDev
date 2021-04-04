@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<html>
+<head>
+<style>
+#t1{
+ position:absolute;
+ top:100px;
+ left:0px;
+ z-index:-1;
+
+}
+#t2{
+ position:absolute;
+ left:0px;
+ z-index:-1;
+
+}
+</style>
+</head>
+<body>
+<h3>Overlapping element --</h3>
+
+When elements are positioned , they can overlap other elements.<br>
+The z-index property specifies the order of an element.An element should have either positive or negative stack order.<br>  
+<br>
+<h5>This is the first heading line. </h5>
+<img src="1.gif" id="t1" height="150px"/>
+<h6>This is the second heading line</h6><br><br>
+<div>
+<img src="back.jpeg" width="100%" height="400px" id="t2"/>
+<p style="margin-top:25px;margin-left:15px;font-size:20px">Heading1</p>
+<p style="margin-top:25px;margin-right:15px;font-size:20px;text-align:right;">Heading2</p>
+<h1 style="margin-bottom:25px;margin-left:15px;font-size:20px">Heading3</h1>
+<h1 style="margin-bottom:25px;margin-right:15px;font-size:20px; text-align:right ">Heading4</h1>
+</div>
+
+
+
+</body>
+</html>

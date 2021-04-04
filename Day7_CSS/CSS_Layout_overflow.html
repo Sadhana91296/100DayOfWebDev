@@ -1,0 +1,81 @@
+<!Doctype HTML>
+<html>
+<head>
+<style>
+#t1{
+background-color:cyan;
+border: 1px solid black;
+overflow:visible;
+width:200px;
+}
+#t2
+{ 
+height:50px;
+width:200px;
+background-color:#DCDCDC;
+border:1px solid black;
+overflow:hidden;
+}
+#t3{
+height:100px;
+width:200px;
+border: 2px solid black;
+overflow:scroll;
+background-color:cyan;
+}
+#t4{
+ background-color:#DCDCDC;
+ border:2px solid black;
+ height:100px;
+ width:200px;
+ overflow:auto;
+}
+
+#t5{
+background-color:green;
+color:white;
+border:2px solid black;
+overflow-x:hidden;
+overflow-y:scroll;
+width:200px;
+}
+</style>
+</head>
+<body>
+<strong>The CSS overflow property control what happens to content that is too big to fit into an area<br>
+The overflow property specify wheather to clip the content or add scrollbar, when the content of an<br>
+element is too big to fit in specified area.<br> 
+ </strong><br>
+
+<h3>Overflow : visible </h3>--
+<p>By default the overflow is visible, meaning that it is not cliped and it's render outside the box. </p><br>
+<div id="t1">You can use the overflow property when you want to have better control of the layout. The overflow 
+property specifies what happens if content overflows an element's box.You can use the overflow property when you want to have better control of the layout. The overflow 
+property specifies what happens if content overflows an element's box.</div>
+
+<h3>Overflow : hidden</h3>--
+<p>With the hidden value, the overflow is cliped, and rest of the thinks is hidden.<br>
+Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p><br>
+<div id="t2">You can use the overflow property when you want to have better control of the layout.
+ The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h3>Overflow : scroll --</h3>
+<p>THe overflow is Clipped and a scrollbar is added scroll inside the box  </p><br><br>
+<div id="t3">You can use the overflow property when you want to have better control of the layout. 
+The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h3>Overflow : auto --</h3>
+<p>The auto value is similar to scroll, but it adds scrollbars only when necessary:</p><br>
+<div id="t4">You can use the overflow property when you want to have better control of the layout.
+ The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h3>Overflow-x and Overflow-y </h3>
+<p>Overflow-x and overflow-y specifies whether to change the overflow of content just horizontally or vertically or both</p><br>
+<div id="t5">You can use the overflow property when you want to have better control of the layout.
+ The overflow property specifies what happens if content overflows an element's box.</div>
+
+
+
+
+</body>
+</html>

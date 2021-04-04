@@ -1,0 +1,46 @@
+<!Doctype HTML>
+<html>
+<head>
+<style>
+#t1
+{
+background-color:cyan;
+border:2px solid black;
+width:100%;
+}
+#t2
+{
+background-color:cyan;
+border:2px solid black;
+width:100%;
+}
+.m1
+{
+float:right;
+}
+.m2
+{
+float:right;
+}
+.clearfix::after
+{
+content: "";
+display:table;
+clear:both;
+}
+</style>
+</head>
+<body>
+<strong>If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container:</strong>
+<div id="t1">
+<img src="fruit.jpg" class="m1"/>
+<p> This is an example of without clearfix </p>
+
+</div><br><br><br>
+<div id="t2" class="clearfix" style="margin-top:400px;">
+<img src="fruit.jpg" class="m2" />
+<p>This is an example of with clearfix</p>
+
+</div>
+</body>
+</html>
