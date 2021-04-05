@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+*{
+ box-sizing:border-box;
+}
+.clearfix::after{
+ content:"";
+ display:table;
+ clear:both;
+}
+.img-container{
+ float:left;
+ padding:5px;
+ width:33.33%;
+}
+</style>
+</head>
+<body>
+  <strong>The same way the grid of boxes can aslo be used to display image side by side </strong> <br><br><br>
+  
+  
+  <div clss="clearfix">
+  <div class="img-container" >
+  
+    <img src="1.jpg" width="100%"/>
+  
+  </div>
+  <div class="img-container">
+     
+	 <img src="2.jpg" width="100%"/>
+    
+  </div>
+  <div class="img-container">
+  
+     <img src="3.jpg" width="100%"/>
+  
+  </div>
+  </div>
+</body>
+</html>

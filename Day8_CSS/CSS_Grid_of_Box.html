@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+.clearfix::after{
+display:table;
+content:"";
+clear:both;
+}
+.box{
+background-color:#DCDCDC;
+float:left;
+width:25%;
+height:100;
+padding:50px;
+border:3px solid black;
+}
+</style>
+</head>
+<body>
+  <strong>With float property, it is easy to float boxex of content side by side.</strong><br><br>
+  
+   <div class="clearfix">
+    <div class="box">Some text is here</div>
+	<div class="box">Some text is here</div>
+    <div class="box">Some text is here</div>
+   
+   </div>
+  
+  
+</body>
+</html>
