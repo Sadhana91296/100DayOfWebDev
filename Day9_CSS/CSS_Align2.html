@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+ .d{
+ 
+   background-color:#DCDCDC;
+   border:2px solid black;
+   margin-top:150px;
+ }
+ .clearfix::after
+ {
+  content:"";
+  display:table;
+  clear:both;
+ }
+ #d1{
+  padding:50px 0px;
+  background-color:cyan;
+  border:2px solid black;
+ }
+ #d2
+ {
+  height:70px;
+  line-height:70px;
+  background-color:cyan;
+  border:2px solid black;
+  text-align:center;
+ }
+ #d3
+ {
+  display:inline-block;
+  line-height:30px;
+  background-color:#DCDCDC;
+  border:2px solid black;
+  vertical-align:middle;
+  height:70px;
+ }
+.d4
+ {
+   position:relative;
+   height:70px;;
+   background-color:cyan;
+   border:3px solid black;
+   
+ }
+ .d4 p{
+ margin:0px;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+ }
+ #d5
+ {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:200px;
+   border:3px solid black;
+ }
+</style>
+</head>
+<body>
+    <h3>The clearfix hack --</h3>
+	<strong>When the container block became smaller to contain another elements(like img) then we use clearfix hack</strong><br>
+	<div class="d">
+	  this division did not uses the clearfix hack
+	  <img src="1.jpg" style="float:right"></img>
+	</div><br><br>
+	<div class="d clearfix">
+	this division is using the clearfix hack
+	 <img src="1.jpg" style="float:right"></img>
+	</div><br><br>
+	
+	
+	<h3>Center Vertically using Padding</h3>
+	<div id="d1">This text is centered vertically. To center both vertically and horizontally, use padding and text-align: center:</div><br><br>
+	
+	
+	<h3>Center Vertically using line-height</h3>
+	<div id="d2">Use the line-height property value that is equal to height property value</div><br><br>
+	<div id="d3">Vertically align using vertical-align:middle   </div><br><br>
+	
+	
+	<h3>Center vertically using position and transform</h3><br>
+	<div class="d4"><p>We use the positioning and transform properties for center vertically</p></div><br><br>
+	
+	<h3>Center Vertically - Using Flexbox</h3>
+	<div id="d5">This text is central vertically</div>
+</body>
+</html>
