@@ -1,0 +1,46 @@
+<!Doctype HTML>
+<html>
+ <head>
+   <style>
+     .one{background:rgba(50, 100,80,0.8); height:100px}
+	 .two{background:rgba(50, 100,80,0.5); height:100px}
+	 .three{background:rgba(50, 100,80,0.2); height:100px}
+	 
+	 #t1{
+	  background:url(2.jpg) repeat;
+	  height:100px;
+	  width:400px;
+	  margin:auto;
+	  padding:20px;
+	  }
+	 #t2{
+	  height:50px;
+	  width:130px;
+	  margin:auto;
+	  background-color:cyan;
+	  padding:10px;
+	  opacity:0.5;
+	 }
+	 p{
+	  font-weight:bold;
+	 }
+   </style>
+ </head>
+ <body>
+  <h1>Transparency using RGBA</h1>
+  <strong>If you want that the child elements will not be afftected by the opacity value of parent elements,<br> 
+  Then we use thr RGBA</strong><br><br>
+  <div class="one"><p>less transparency but text p tag(child )is not affected</p>  </div>
+  <div class="two"><p>Medium transparency but text p tag(child )is not affected</p>  </div>
+  <div class="three"><p>High transparency but text p tag(child )is not affected</p>  </div>
+  
+  
+   <h1>Text on transparent-box</h1>
+   <div id="t1">
+     <div id="t2"><p>Sadhana Singh</p></div>
+   </div>
+  
+  
+  
+ </body>
+</html>
