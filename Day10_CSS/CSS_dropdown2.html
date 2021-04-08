@@ -1,0 +1,64 @@
+<!Doctype HTML>
+<html>
+ <head>
+   <style>
+    #container{
+	 display:inline-block;
+	 position:relative
+	
+	}
+	span{
+	 background-color:green;
+	 color:white;
+	 text-shadow:1px 1px 1px black;
+	 text-align:center;
+	 height:20px;
+	 padding:15px;
+	 width:200px;
+	 display:block;
+	 font-size:18px;
+	 box-shadow:1px 1px 1px 1px black;
+	}
+	#dropdown {
+    
+	 position:absolute;
+	 display:none;
+	 background-color:#DCDCDC;
+	  font-size:18px;
+     min-width:200px;
+	 z-index:1;
+	 
+	}
+	a{
+	 text-decoration:none;
+	 color:white;
+	 padding:15px;
+	 display:block;
+	 width:200px;
+	 box-shadow:1px 1px 1px 1px gray;
+	 text-shadow:2px 2px 2px green;
+	 font-size:18px;
+	 right:0;
+	}
+	a:hover
+	{
+	 background-color:gray;
+	}
+	#container:hover #dropdown{
+	 display:block;
+	}
+   </style>
+ </head>
+ <body>
+  <h1>DropDown with link</h1><br>
+  
+  <div id="container">
+     <span>Dropdown</span>
+     <div id="dropdown">
+	    <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>		
+	 </div>
+  </div>
+ </body>
+</html>

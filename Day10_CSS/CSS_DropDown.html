@@ -2,10 +2,49 @@
 <html>
  <head>
    <style>
-   
+     .main{
+	  position:relative;
+  	  display:inline-block;	
+      background-color:green;	
+      color:white;
+      text-align:center;
+	  
+      width:300px;
+      height:50px;
+      
+      font-size:25px;
+      text-shadow:1px 1px 1px green;	
+      
+	 }
+	 .dropdown{
+	   position:relative;
+	   display:inline;
+	   color:black;
+	   background-color:#DCDCDC;
+	   min-width:300px;
+	   
+	   text-align:center
+	   box-shadow:0px 8px 16px 0px black;
+	   z-index:1;
+	   display:none;
+	 }
+	 .main:hover .dropdown{
+	  display:block;
+	 }
    </style>
  </head>
  <body>
-  <h1></h1>
+  <h1>CSS Basic DropDown</h1>
+  <strong>Use the button or span tag to open the dropdown.and for the dropdown content we can use div tag </strong><br><br><br>
+     <div class="main">
+	  <span>Registration</span>
+	   <div class="dropdown"><p>New Registration</p>
+                   <p>Prematric Registration</p>
+	                   <p>Postmatric Registration</p></div>
+	 </div>
+   
+  
+  
+  
  </body>
 </html>
