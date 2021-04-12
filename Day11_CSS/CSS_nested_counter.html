@@ -1,0 +1,38 @@
+<!Doctype HTML>
+<html>
+ <head>
+   <style>
+    body{
+	 counter-reset:task;
+	}
+	h1::after{
+	 counter-increment:task;
+	 content:" : " counter(task); 
+	}
+	h1{
+	 counter-reset:subtask;
+	}
+	p::before
+	{
+	 counter-increment:subtask;
+	 content: counter(task) "." counter(subtask) " ";
+	}
+	a::before
+	{
+	 counter-increment:subtask;
+	 content: counter(task) "." counter(subtask) " ";
+	}
+   </style>
+ </head>
+ <body>
+  <h3>CSS nested counter</h3>
+  <h1> Section </h1>
+   <p>Header</p>
+   <p>Footer</p>
+   <p>Main</p>
+ <h1>Section </h1>
+  <a href="https://www.facebook.com">Facebook</a><br>
+  <a href="https://www.gov.in">GOI</a><br>
+  <a href="https://www.w3school.com">W3School</a> <br> 
+ </body>
+</html>

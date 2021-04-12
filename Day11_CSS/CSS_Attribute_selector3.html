@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<html>
+ <head>
+   <style>
+    input{
+	 height:50px;
+	 width:150px;
+	 background-color:#DCDCDC;}
+	 input[value~="Submit"]
+	 {
+	  color:red;
+	 }
+	 p[id|="t1"]{color:red;}
+	 p[class^="t1"]{color:red;}
+   </style>
+ </head>
+ <body>
+  <h1>CSS [attribute ~="value"] selector</h1>
+  <strong>This selector is used to select the attribute specified value(case-sensitive) </strong><br><br>
+   <input type="button" value="Submit">
+   <input type="button" value="Please Submit">
+   <input type="button" value="submit me">
+   <input type="button" value="Submit-here"><br><br>
+   
+   <h1>CSS [attribute|="value"] selector</h1>
+   <strong>This selector is used to select specified attribute specified value starting with specified value</strong><br><br>
+   <p id="t1_1">Hi there</p>
+   <p id="t11">How are you?</p>
+   <p id="t1-1">I am fine.</p>
+   <p id="_t1">What about you?</p><br><br>
+   
+   <h1>CSS [attribute^="value"] selector</h1>
+   <strong>This selector is used to select specified attribute specified value begin with specified value</strong><br><br>
+   <p class="t1_1">Hi there</p>
+   <p class="t11">How are you?</p>
+   <p class="t1-1">I am fine.</p>
+   <p class="_t1">What about you?</p><br><br>
+  
+ </body>
+</html>
